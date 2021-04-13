@@ -1,0 +1,21 @@
+INSERT INTO Products
+           (
+           ProductName
+           ,SupplierID
+           ,CategoryID
+           ,QuantityPerUnit
+           ,UnitPrice
+           ,UnitsInStock
+           ,UnitsOnOrder
+           ,ReorderLevel
+           ,Discontinued)
+     VALUES(
+            '{{{productName}}}'
+           ,{{supplierID}}
+           ,{{categoryID}}
+           ,'{{{quantityPerUnit}}}'
+           ,{{unitPrice}}
+           ,{{unitsInStock}}
+           ,{{unitsOnOrder}}
+           ,{{reorderLevel}}
+           ,{{discontinued}})

@@ -1,0 +1,1 @@
+delete from  Suppliers where supplierID = {{id}}

@@ -1,0 +1,1 @@
+## Como responden los endpoint a una petición
