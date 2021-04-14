@@ -58,3 +58,6 @@ Aqui se encuentran los metodos necesarios para conexión y ejecución de las con
 - ExpressJs
 - NodeJs
 - mustacheJs
+- nodemon
+## Ejecución
+Para poder realizar la ejecución del proyecto el comando es npm run start, este correra el app con nodemon para tener la actualización en tiempo real de los cambios
