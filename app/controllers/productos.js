@@ -123,7 +123,7 @@ exports.getProductos = async (req, res, next) => {
         const { mainProducts, getProducts } = config.sqlRoutes
         let result = await executeGet(mainProducts, getProducts, query, options)
         let itemsFormated = products(result)
-        res.status(200).json({ state: 'correct', currentPage: page, items: itemsFormated, perPage: rows })
+        res.status(200).json({ state: 'correct', currentPage: query.page, items: itemsFormated, perPage: query.rows })
     } catch (error) {
         res.status(500).json({ state: 'error', result: error })
     }
