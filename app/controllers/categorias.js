@@ -8,6 +8,14 @@ const { config } = require('../assets/config').modules
 // Models de los datos
 const { category } = require('../models/category')
 
+
+
+/**
+ * Controlador que recibe la petición de busqueda de una categoria, con sus productos asociados
+ * @param {*} req 
+ * @param {*} res 
+ * @param {*} next 
+ */
 exports.getCategories = async (req, res, next) => {
     try {
         const query = req.query

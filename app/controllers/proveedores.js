@@ -7,6 +7,14 @@ const { config } = require('../assets/config').modules
 const { suppliers } = require('../models/supplier')
 
 
+/**
+ * Controlador que recibe la petición para obtener la información de un proveedor con su productos
+ * @param {*} req 
+ * @param {*} res 
+ * @param {*} next 
+ */
+
+
 exports.getProveedoresIdProducts = async (req, res, next) => {
     try {
         const query = req.query
@@ -19,6 +27,15 @@ exports.getProveedoresIdProducts = async (req, res, next) => {
         res.status(500).json({ state: 'incorrect', result: error })
     }
 }
+
+/**
+ * Controlador que recibe la petición para eliminar un proveedor
+ * @param {*} req 
+ * @param {*} res 
+ * @param {*} next 
+ */
+
+
 exports.deleteProveedoresId = async (req, res, next) => {
     try {
         const query = req.query
@@ -31,6 +48,18 @@ exports.deleteProveedoresId = async (req, res, next) => {
     }
 
 }
+
+
+
+/**
+ * Controlador que recibe la petición para ontener la información de un proveedor
+ * @param {*} req 
+ * @param {*} res 
+ * @param {*} next 
+ */
+
+
+
 exports.getProveedoresId = async (req, res, next) => {
     try {
         const query = req.query

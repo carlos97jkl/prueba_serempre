@@ -6,8 +6,7 @@ const router = express.Router()
 // Controladores
 const { getCategories } = require('../controllers/categorias')
 
-// Rutas 
-
+// Rutas para el consumo de los servicios relacionados con categorias
 router.get('/:id/products', getCategories)
 
 

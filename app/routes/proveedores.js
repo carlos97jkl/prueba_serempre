@@ -8,7 +8,7 @@ const { getProveedoresIdProducts, deleteProveedoresId, getProveedoresId } = requ
 
 
 
-// Rutas 
+// Rutas para el consumo de los servicios relacionados con los proveedores
 router.get('/:id/products', getProveedoresIdProducts)
 router.delete('/:id', deleteProveedoresId)
 router.get('/:id', getProveedoresId)

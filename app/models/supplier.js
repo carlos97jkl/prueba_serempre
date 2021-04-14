@@ -1,3 +1,9 @@
+/**
+ * Metodo que genera el formato de respuesta de la petición de los proveedores consultadas
+ * @param {Proveedores consultadas desde la base de datos} items 
+ * @returns 
+ */
+
 const suppliers = (items) => {
   const itemsFormated = items.map(item => {
     let supplier = {

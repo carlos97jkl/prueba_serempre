@@ -1,3 +1,11 @@
+
+/**
+ * Metodo que genera el formato de respuesta de la pateición de la o las categorias consultadas
+ * @param {Categorias consultadas desde la base de datos} items 
+ * @returns 
+ */
+
+
 const category = (items) => {
   const itemsFormated = items.map(item => {
     let category = {
@@ -31,9 +39,6 @@ const category = (items) => {
       unitsInStock: product.UnitsInStock,
       unitsOnOrder: product.UnitsOnOrder
     }))
-
-
-
 
     return category
 

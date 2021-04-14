@@ -7,8 +7,7 @@ const router = express.Router()
 const productos = require('./productos')
 const categories = require('./categorias')
 const proveedores = require('./proveedores')
-// Rutas principales
-
+// Rutas principales para el consumo de los servicios de producstos, categorias y  proveedores
 router.use('/products', productos)
 router.use('/categories', categories)
 router.use('/suppliers', proveedores)

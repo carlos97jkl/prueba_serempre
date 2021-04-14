@@ -1,3 +1,10 @@
+
+/**
+ * Metodo que genera el formato de respuesta de la pateición de los  productos consultadas
+ * @param {Productos consultadas desde la base de datos} items 
+ * @returns 
+ */
+
 const products = (items) => {
   const itemsFormated = items.map(item => {
     return {

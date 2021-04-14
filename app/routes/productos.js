@@ -8,8 +8,7 @@ const { getProductosSearch, getProductosId, putProductosId, postProductos, getPr
 
 
 
-// Rutas 
-
+// Rutas  para el consumo de los servicios relacionados con los productos
 router.get('/search', getProductosSearch)
 router.get('/:id', getProductosId)
 router.put('/:id', putProductosId)

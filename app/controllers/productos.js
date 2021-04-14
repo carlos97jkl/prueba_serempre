@@ -7,6 +7,15 @@ const { config } = require('../assets/config').modules
 const { products } = require('../models/products')
 
 
+/**
+ * Controlador que recibe la petición para la busqueda de productos por nombre de producto o categoría o proveedor 
+ * @param {*} req 
+ * @param {*} res 
+ * @param {*} next 
+ */
+
+
+
 exports.getProductosSearch = async (req, res, next) => {
     try {
         let query = req.query
@@ -23,6 +32,15 @@ exports.getProductosSearch = async (req, res, next) => {
     }
 
 }
+/**
+ * Controlador que recibe la petición para de busqueda de una producto especifico con su categoria y proveedor
+ * @param {*} req 
+ * @param {*} res 
+ * @param {*} next 
+ */
+
+
+
 exports.getProductosId = async (req, res, next) => {
     try {
         const { mainProducts, getProducts } = config.sqlRoutes
@@ -39,6 +57,13 @@ exports.getProductosId = async (req, res, next) => {
     }
 
 }
+/**
+ * Controlador que recibe la petición para la actualización un producto
+ * @param {*} req 
+ * @param {*} res 
+ * @param {*} next 
+ */
+
 exports.putProductosId = async (req, res, next) => {
     try {
         const { mainProducts, putProducts } = config.sqlRoutes
@@ -55,6 +80,14 @@ exports.putProductosId = async (req, res, next) => {
 
 
 }
+
+/**
+ * Controlador que recibe la petición para crear un nuevo producto
+ * @param {*} req 
+ * @param {*} res 
+ * @param {*} next 
+ */
+
 exports.postProductos = async (req, res, next) => {
     try {
         const { mainProducts, postProducts } = config.sqlRoutes

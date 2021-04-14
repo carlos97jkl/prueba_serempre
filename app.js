@@ -6,5 +6,7 @@ app.use(urlencoded({
     extended: true
 }))
 app.use(json())
+
+//Ruta de acceso principal al aplicativo
 app.use('/api', index)
 app.listen(8080)
