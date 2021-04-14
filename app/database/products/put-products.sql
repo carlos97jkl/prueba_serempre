@@ -1,35 +1,35 @@
 UPDATE Products SET
-{{{#categoryID}}}
+{{#categoryID}}
     CategoryID = {{categoryID}},  
-{{{/categoryID}}}
+{{/categoryID}}
 
-{{{#discontinued}}}
-    Discontinued = {{discontinued}},  
-{{{/discontinued}}}
+{{#discontinued}}
+    Discontinued = {{discontinued}}, 
+{{/discontinued}}
 
-{{{#productName}}}
+{{#productName}}
     ProductName = '{{{productName}}}',  
-{{{/productName}}}
+{{/productName}}
 
-{{{#quantityPerUnit}}}
+{{#quantityPerUnit}}
     QuantityPerUnit = '{{{quantityPerUnit}}}',  
-{{{/quantityPerUnit}}}
+{{/quantityPerUnit}}
 
-{{{#reorderLevel}}}
+{{#reorderLevel}}
     reorderLevel = {{reorderLevel}},  
-{{{/reorderLevel}}}
+{{/reorderLevel}}
 
-{{{#supplierID}}}
+{{#supplierID}}
     SupplierID = {{supplierID}},  
-{{{/supplierID}}}
+{{/supplierID}}
 
-{{{#unitPrice}}}
+{{#unitPrice}}
     UnitPrice = {{unitPrice}},  
-{{{/unitPrice}}}
+{{/unitPrice}}
 
-{{{#unitsInStock}}}
+{{#unitsInStock}}
     UnitsInStock = {{unitsInStock}},  
-{{{/unitsInStock}}}
+{{/unitsInStock}}
 
 {{{#unitsOnOrder}}}
     UnitsOnOrder = {{unitsOnOrder}}

@@ -15,7 +15,7 @@ const { suppliers } = require('../models/supplier')
  */
 
 
-exports.getProveedoresIdProducts = async (req, res, next) => {
+exports.getSuppliersIdProducts = async (req, res, next) => {
     try {
         const query = req.query
         query.id = req.params.id
@@ -36,7 +36,7 @@ exports.getProveedoresIdProducts = async (req, res, next) => {
  */
 
 
-exports.deleteProveedoresId = async (req, res, next) => {
+exports.deleteSupplierId = async (req, res, next) => {
     try {
         const query = req.query
         query.id = req.params.id
@@ -60,7 +60,7 @@ exports.deleteProveedoresId = async (req, res, next) => {
 
 
 
-exports.getProveedoresId = async (req, res, next) => {
+exports.getSupplierId = async (req, res, next) => {
     try {
         const query = req.query
         query.id = req.params.id

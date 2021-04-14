@@ -16,7 +16,7 @@ const { products } = require('../models/products')
 
 
 
-exports.getProductosSearch = async (req, res, next) => {
+exports.getProductsSearch = async (req, res, next) => {
     try {
         let query = req.query
         if (query.productName || query.categoryName || query.supplierName) {
@@ -41,7 +41,7 @@ exports.getProductosSearch = async (req, res, next) => {
 
 
 
-exports.getProductosId = async (req, res, next) => {
+exports.getProductsId = async (req, res, next) => {
     try {
         const { mainProducts, getProducts } = config.sqlRoutes
         let body = {}
@@ -64,7 +64,7 @@ exports.getProductosId = async (req, res, next) => {
  * @param {*} next 
  */
 
-exports.putProductosId = async (req, res, next) => {
+exports.putProductsId = async (req, res, next) => {
     try {
         const { mainProducts, putProducts } = config.sqlRoutes
         const body = req.body
@@ -88,7 +88,7 @@ exports.putProductosId = async (req, res, next) => {
  * @param {*} next 
  */
 
-exports.postProductos = async (req, res, next) => {
+exports.postProducts = async (req, res, next) => {
     try {
         const { mainProducts, postProducts } = config.sqlRoutes
         const body = req.body
@@ -104,7 +104,7 @@ exports.postProductos = async (req, res, next) => {
     }
 
 }
-exports.getProductos = async (req, res, next) => {
+exports.getProducts = async (req, res, next) => {
     try {
         let query = req.query
         query.allProducts = true
